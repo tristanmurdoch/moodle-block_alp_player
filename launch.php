@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 /**
- * Completion Progress block settings
+ * 
  *
  * @package   block_alp_player
  * @copyright 2016 Tristan Mackay
@@ -38,6 +38,8 @@
     $list->instructorchoiceacceptgrades = false;
     $list->instructorchoicesendname = true;
     $list->instructorchoicesendemailaddr = true;
+    $list->debuglaunch = false;
+    $list->instructorcustomparameters = false;
     $list->toolurl = $ltisettings->ALP_URL;
     $list->resourcekey = $ltisettings->ALP_Consumer_Key;
     $list->password = $ltisettings->ALP_Consumer_Secret;
