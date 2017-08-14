@@ -14,7 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 /**
- * 
  *
  * @package   block_alp_player
  * @copyright 2016 Tristan Mackay
@@ -31,7 +30,7 @@
     require_login($course);
 
     $ltisettings = get_config('block_alp_player');
-    
+
     $list = new stdClass;
     $list->id = $id.'ALPBLOCK';
     $list->course = $id;
@@ -43,5 +42,5 @@
     $list->toolurl = $ltisettings->ALP_URL;
     $list->resourcekey = $ltisettings->ALP_Consumer_Key;
     $list->password = $ltisettings->ALP_Consumer_Secret;
-    
+
     lti_launch_tool($list);

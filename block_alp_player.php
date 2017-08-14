@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 /**
- * 
+ *
  *
  * @package   block_alp_player
  * @copyright 2016 Tristan Mackay
@@ -30,7 +30,7 @@ class block_alp_player extends block_base {
 
     }
 
-   public function instance_allow_multiple() {
+    public function instance_allow_multiple() {
         return false;
     }
 
