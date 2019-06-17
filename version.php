@@ -23,5 +23,5 @@
 defined('MOODLE_INTERNAL') || die;
 
 $plugin->component = 'block_alp_player';
-$plugin->version = 2017081409;  // YYYYMMDDHH.
+$plugin->version = 2019021900;  // YYYYMMDDHH.
 $plugin->requires = 2010112400; // YYYYMMDDHH.

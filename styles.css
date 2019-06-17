@@ -1,3 +1,95 @@
-.block .block_alp_player {
-text-align: center;
+.block_alp_player img{
+    width: 100%;
+    height: 100%;
 }
+.block_alp_player a.block-btn{
+    background-color: #c00;
+    color: #fff;
+    display: inline-block;
+    overflow: hidden;
+    position:relative;
+    height: 65px;
+    padding-right: 65px;
+}
+.block_alp_player a.block-btn > span{
+    display: block;
+    padding: 0 22.5px;
+    position: relative;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size:16px;
+    font-weight: 600;
+}
+.block_alp_player a.block-btn > i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 47px;
+    height: 100%;
+    border-left: 1px solid rgba(0,0,0,0.25);
+    line-height: 67px;
+    text-indent: 18px;
+    -webkit-transition: .3s text-indent ease-out;
+    -o-transition: .3s text-indent ease-out;
+    -moz-transition: .3s text-indent ease-out;
+    transition: .3s text-indent ease-out;
+}
+.block_alp_player a.block-btn > i::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0px;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255,255,255,.25);
+    color: rgba(255,255,255,255);
+}
+.block_alp_player a.block-btn:hover, .block_alp_player a.block-btn:focus{
+    background-color: #b50000;
+}
+.block_alp_player a.block-btn:hover i{
+    text-indent: 22px;
+}
+@media (max-width:1200px) {
+    .block_alp_player a.block-btn{
+        padding-top:15px;
+        padding-bottom:15px; 
+    }
+    .block_alp_player a.block-btn > i{
+        line-height:88px;    
+    }    
+    .block_alp_player a.block-btn > span{
+        font-size:16px;
+        padding:0 0 0 10px;
+    }
+}
+@media (max-width:821px) {
+    .block_alp_player a.block-btn > span{
+        font-size:14px;
+    }
+}
+@media (max-width:767px) {
+    .block_alp_player a.block-btn > span{
+        font-size:16px;
+    }
+    .block_alp_player img{
+        max-width: 50%;
+        display:block;
+    }
+    .block_alp_player a.block-btn{
+        padding-top:0;
+        padding-bottom:0;
+        display:block;
+        max-width:70%; 
+    }
+    .block_alp_player a.block-btn > i{
+        line-height:67px;    
+    }    
+}
+

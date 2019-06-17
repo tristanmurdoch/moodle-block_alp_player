@@ -37,8 +37,6 @@
     $list->instructorchoiceacceptgrades = false;
     $list->instructorchoicesendname = true;
     $list->instructorchoicesendemailaddr = true;
-    $list->debuglaunch = false;
-    $list->instructorcustomparameters = false;
     $list->toolurl = $ltisettings->ALP_URL;
     $list->resourcekey = $ltisettings->ALP_Consumer_Key;
     $list->password = $ltisettings->ALP_Consumer_Secret;

@@ -42,11 +42,12 @@ class block_alp_player extends block_base {
         global $CFG, $COURSE, $USER;
         if ($COURSE->shortname !== null) {
             $this->content = new stdClass;
-            $this->content->text = '<div class="block_alp_player"><a target="_blank" href="'.
+            $this->content->text = '<div class="block_alp_player_content"><a class="block-btn" target="_blank" href="'.
                                    $CFG->wwwroot .'/blocks/alp_player/launch.php?id='.$COURSE->id.
-                                   '"><img src="'. $CFG->wwwroot .'/blocks/alp_player/pix/echo360_logo_160x60.png"'.
-                                   ' border="0" alt="Echo360"/><br/>'.get_string('launchtext', 'block_alp_player').'</a></div>';
-            return $this->content;
+                                   '"><span>Class videos and lecture recordings</span><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>'.
+                                   '<img alt="echo360 lecture recording and media streaming" src="'. $CFG->wwwroot .'/blocks/alp_player/pix/echo360_logo_02.png" />'.
+                                   '</div>';
+        return $this->content;
         }
 
          $this->content = new stdClass;
